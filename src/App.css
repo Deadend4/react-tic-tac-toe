@@ -6,6 +6,14 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+
+  /*unselect text*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
@@ -38,16 +46,8 @@ h6 {
   font-size: 12px;
 }
 
-code {
-  font-size: 1.2em;
-}
-
 ul {
   padding-inline-start: 20px;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -58,17 +58,25 @@ body {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #1e1e1e;
   float: left;
-  font-size: 24px;
+  font-size: 45px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 55px;
+  height: 55px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 55px;
+}
+
+.square:hover {
+  background: rgba(125, 125, 255, 0.496);
+}
+
+.square:active {
+  background: rgba(255, 139, 139, 0.736);
 }
 
 .board-row:after {
@@ -88,4 +96,18 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+
+.history__button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.history__button:hover {
+  border-bottom: 2px solid rgb(242, 36, 36);
+}
+
+.history__button:active {
+  color: rgb(242, 36, 36);
 }
